@@ -6,8 +6,12 @@ Development](https://en.wikipedia.org/wiki/Test-driven_development) with
 
 ## Setup
 
+Requirements:
+
+* Node.js 12+
+
 ```bash
-git clone https://github.com/AlphaHydrae/tdd-brownbag
+git clone https://github.com/AlphaHydrae/tdd-brownbag.git
 cd tdd-brownbag
 npm ci
 npm run test:all
