@@ -4,11 +4,11 @@ This repository contains a basic setup to practice [Test-Driven
 Development](https://en.wikipedia.org/wiki/Test-driven_development) with
 [Node.js](https://nodejs.org).
 
-## Setup
-
-Requirements:
+## Requirements
 
 * Node.js 12+
+
+## Getting Started
 
 ```bash
 git clone https://github.com/AlphaHydrae/tdd-brownbag.git
