@@ -1,0 +1,7 @@
+all: true
+include:
+  - lib/**/*.js
+  - spec/**/*.js
+reporter:
+  - html
+  - text-summary

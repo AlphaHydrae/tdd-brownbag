@@ -1,0 +1,41 @@
+{
+  "name": "tdd-brownbag",
+  "version": "1.0.0",
+  "description": "Practice test-driven development with Node.js",
+  "main": "lib/index.js",
+  "private": true,
+  "scripts": {
+    "postinstall": "npm test",
+    "test": "nyc mocha spec/**/*.spec.js",
+    "test:all": "concurrently \"npm run test:coverage\" \"npm run test:watch\"",
+    "test:coverage": "live-server --host=localhost --quiet coverage",
+    "test:watch": "onchange --initial \"lib/**/*.js\" \"spec/**/*.js\" -- npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlphaHydrae/tdd-brownbag.git"
+  },
+  "keywords": [
+    "tdd",
+    "mocha",
+    "chai"
+  ],
+  "author": "Simon Oulevay <npm@alphahydrae.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlphaHydrae/tdd-brownbag/issues"
+  },
+  "homepage": "https://github.com/AlphaHydrae/tdd-brownbag#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "concurrently": "^5.2.0",
+    "live-server": "^1.2.1",
+    "mocha": "^8.0.1",
+    "nyc": "^15.1.0",
+    "onchange": "^7.0.2"
+  },
+  "engines": {
+    "node": ">= 12.0.0"
+  }
+}
